@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:id="@+id/scrollviewLL"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent">
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:background="@drawable/bckgrnd">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:id="@+id/wordtextview"
+			android:text="Word"
+			android:paddingTop="7dip"
+			style="@style/statictext"></TextView>
+		<EditText android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:id="@+id/wordedittext"
+			style="@style/editbox"></EditText>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="Meaning"
+			android:id="@+id/meaningtextview"
+			style="@style/statictext"></TextView>
+		<EditText android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:inputType="textMultiLine"
+			android:id="@+id/meaningedittext"
+			style="@style/editbox"></EditText>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:id="@+id/usagetextview1"
+			android:text="Usage (Sentence 1)"
+			style="@style/statictext"></TextView>
+		<EditText android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:inputType="textMultiLine"
+			android:id="@+id/usage1edittext"
+			style="@style/editbox"></EditText>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Usage (Sentence 2)"
+			android:id="@+id/usagetextview2"
+			style="@style/statictext"></TextView>
+		<EditText android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:inputType="textMultiLine"
+			android:id="@+id/usage2edittext"
+			style="@style/editbox"></EditText>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Synonyms"
+			android:id="@+id/synonymstextview"
+			style="@style/statictext"></TextView>
+		<EditText android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:inputType="textMultiLine"
+			android:id="@+id/synonymsedittext"
+			style="@style/editbox"></EditText>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Antonyms"
+			android:id="@+id/antonymstextview"
+			style="@style/statictext"></TextView>
+		<EditText android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:inputType="textMultiLine"
+			android:id="@+id/antonymsedittext"
+			style="@style/editbox"></EditText>
+		<LinearLayout
+		    android:id="@+id/buttonlinearlayout"
+		    android:layout_width="wrap_content"
+		    android:layout_height="fill_parent"
+		    android:layout_gravity="center_horizontal"
+		    android:layout_marginTop="10dip">
+		    	<Button 
+		    		android:layout_height="fill_parent" 
+		    		android:text="Enter Word" 
+		    		android:id="@+id/enterwordbutton" 
+		    		android:layout_width="wrap_content"
+		    		android:background="@drawable/tab_bg_selected"
+		    		android:padding="10dip"
+		    		android:layout_marginRight="25dip"></Button>
+				<Button 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/dontenterbutton"
+					android:text="Don't Enter"
+					android:background="@drawable/tab_bg_selected"
+					android:padding="10dip"></Button>
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>
+
+

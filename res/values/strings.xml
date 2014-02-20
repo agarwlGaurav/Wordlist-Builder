@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, WordlistBuilderActivity!</string>
+    <string name="app_name">Wordlist Builder</string>
+    <string name="table_name">WordList</string>
+    <string name="db_name">WordlistBuilder</string>
+    <string name="complete_list">Word List</string>
+    <string name="my_list">Favorite</string>
+</resources>

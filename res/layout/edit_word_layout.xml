@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/scrollviewLLedittext"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:background="@drawable/bckgrnd">
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="Word" 
+			android:id="@+id/wordtextvieweditword"
+			android:paddingTop="7dip"
+			style="@style/statictext"></TextView>
+		<EditText 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/wordedittexteditword"
+			style="@style/editbox"></EditText>
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Meaning"
+			android:id="@+id/meaningtextvieweditword"
+			style="@style/statictext"></TextView>
+		<EditText android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:inputType="textMultiLine"
+			android:id="@+id/meaningedittexteditword"
+			style="@style/editbox"></EditText>
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Usage (Sentence 1)"
+			android:id="@+id/usage1textvieweditword"
+			style="@style/statictext"></TextView>
+		<EditText 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:inputType="textMultiLine"
+			android:id="@+id/usage1edittexteditword"
+			style="@style/editbox"></EditText>
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Usage (Sentence 2)"
+			android:id="@+id/usage2textvieweditword"
+			style="@style/statictext"></TextView>
+		<EditText 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:inputType="textMultiLine" 
+			android:id="@+id/usage2edittexteditword"
+			style="@style/editbox"></EditText>
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="Synonyms" 
+			android:id="@+id/synonymstextvieweditword"
+			style="@style/statictext"></TextView>
+		<EditText 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:inputType="textMultiLine"
+			android:id="@+id/synonymsedittexteditword"
+			style="@style/editbox"></EditText>
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Antonyms"
+			android:id="@+id/antonymstextvieweditword"
+			style="@style/statictext"></TextView>
+		<EditText 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:inputType="textMultiLine"
+			android:id="@+id/antonymsedittexteditword"
+			style="@style/editbox"></EditText>
+		<LinearLayout android:id="@+id/buttonlinearlayoutedittext"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="10dip">
+			<Button 
+				android:layout_height="wrap_content"
+			 	android:text="Edit Word"
+				android:layout_width="wrap_content"
+				android:id="@+id/editwordbuttoneditword"
+				android:background="@drawable/tab_bg_selected"
+				android:padding="10dip" 
+				android:layout_marginRight="25dip"></Button>
+			<Button 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Don't Edit"
+				android:id="@+id/dontenterbuttoneditword"
+				android:background="@drawable/tab_bg_selected"
+				android:padding="10dip"></Button>
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>
+
+

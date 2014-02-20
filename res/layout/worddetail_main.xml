@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/worddetailmainlayout" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:background="@drawable/bckgrnd">
+	<LinearLayout android:id="@+id/worddetailbuttonslinearlayout"
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/gradientwithtranparency"
+		android:layout_alignParentBottom="true"
+		android:weightSum="10">
+		<FrameLayout android:id="@+id/worddetailaddremovebuttonframelayout"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="10">
+			<ImageButton android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/add"
+				android:background="@null"
+				android:id="@+id/worddetailaddtomylist"
+				android:visibility="invisible">
+			</ImageButton>
+			<ImageButton android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/remove"
+				android:background="@null"
+				android:id="@+id/worddetailremovefrommylist">
+			</ImageButton>
+		</FrameLayout>
+		<ImageButton
+			android:id="@+id/editwordButtonworddetail"
+			android:src="@drawable/edit"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:background="@null" 
+			android:layout_weight="10"></ImageButton>
+	</LinearLayout>
+	<ScrollView
+		android:layout_height="wrap_content" 
+		android:layout_width="fill_parent"
+		android:layout_alignParentTop="true"
+		android:layout_above="@id/worddetailbuttonslinearlayout">
+		<LinearLayout
+			android:id="@+id/worddetaillinearlayout"
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent"
+			android:layout_alignParentTop="true"
+			android:orientation="vertical">
+			<TextView android:id="@+id/wordworddetail"
+				android:layout_height="wrap_content" 
+				android:layout_width="wrap_content"
+				android:text="dynamicword"
+				android:layout_gravity="center"
+				android:paddingTop="5dip"
+				style="@style/dynamictext"></TextView>
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="wrap_content" 
+				android:id="@+id/staticmeaningtext" 
+				android:text="meaning"
+				style="@style/statictext"></TextView>
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="wrap_content" 
+				android:text="dynamicmeaning" 
+				android:id="@+id/meaningworddetail"
+				style="@style/dynamictext"></TextView>
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="wrap_content" 
+				android:id="@+id/staticusageonetext"
+				android:text="usage (sentence 1)"
+				style="@style/statictext"></TextView>
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="wrap_content" 
+				android:text="dynamicusageone"
+				android:id="@+id/usageoneworddetail"
+				style="@style/dynamictext"></TextView>
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="wrap_content" 
+				android:id="@+id/staticusagetwo"
+				android:text="usage (sentence 2)"
+				style="@style/statictext"></TextView>
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/usagetwoworddetail"
+				android:text="dynamicusagetwo"
+				style="@style/dynamictext"></TextView>
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="wrap_content" 
+				android:text="synonyms" 
+				android:id="@+id/staticsynonymstext"
+				style="@style/statictext"></TextView>
+			<TextView android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="dynamicsynonyms"
+			    android:id="@+id/synonymsworddetail"
+			    style="@style/dynamictext"></TextView>
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="antonyms"
+				android:id="@+id/staticantonyms"
+				style="@style/statictext"></TextView>
+			<TextView android:layout_width="wrap_content"
+			 	android:layout_height="wrap_content"
+			 	android:text="dynamicantonyms"
+			 	android:id="@+id/antonymsworddetail"
+			 	style="@style/dynamictext"></TextView>
+		</LinearLayout>
+	</ScrollView>
+</RelativeLayout>
